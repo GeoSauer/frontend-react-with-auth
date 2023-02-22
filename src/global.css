@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font: 'Poppins', 'Segoe UI', Candara,
+    'Bitstream Vera Sans', 'DejaVu Sans', 'Bitstream Vera Sans',
+    'Trebuchet MS', Verdana, 'Verdana Ref', sans-serif;
+    --label-font: 'Bebas Neue', Impact, Haettenschweiler,
+    'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat',
+    'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+
+    --header-color: #bc4c47;
+    --button-color: #953d35;
+    --subheader-color: #5e211d;
+    --offset-color: #ca9d90;
+    --tag-color: #e4fdff;
+    --light-accent-color: #e5f1bf;
+    --background-color: #f9f2e7;
+    --black-color: rgb(27, 42, 48);
+    --caption-color: rgb(112, 65, 65);
+    --white-color: white;
+
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+
+    --padding: 20px;
+    --padding-half: calc(var(--padding) / 2);
+    @media (min-width: 700px) {
+    --padding: 40px;
+    }
+
+    --header-height: 35px;
+    @media (min-width: 700px) {
+    --header-height: 50px;
+    }
+}
+body {
+    font-family: var(--primary-font);
+    background: var(--background-color);
+    color: var(--black-color);
+  }
+  
+  :global(.label-text) {
+    font-family: var(--label-font);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  
+  :global(.error) {
+    color: red;
+    min-height: 1em;
+  }
